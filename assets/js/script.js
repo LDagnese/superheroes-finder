@@ -1,11 +1,9 @@
-// declare variable
-
-// API handler for Marvel
-
-// API handler for comicvine
-
-// element creation for MarvelAPI
-
-// element creation for comicvine API
-
-// event listeners
+var getMoviesList = function () {
+    // var superhero = "Captain America"
+    var apiURL = "https://comicvine.gamespot.com/api/characters/?api_key="
+    fetch(apiURL).then(function(response) {
+        response.json().then(function(data) {
+            console.log(data);
+        })
+    }) 
+};
