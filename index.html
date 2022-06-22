@@ -10,42 +10,42 @@
     <title>Superhero Super Searcher</title>
 </head>
 
+<!--logo and title-->
+ <header class="row" id="header">
+    <div class="col s2">
+        <img class="logo" src="./assets/images/supersearch logo.jpg" />
+            </div>
+    <div class="col s10">
+        <h1 class="lengthen"><span>M</span>arvel<span>S</span>uper<span>S</span>earcher</h1>
+            </div>
+</header>
+<!--end of logo and title section-->
+
+<!--main body section-->
 <body>
-    <!--logo and title-->
-    <div class="row">
-        <div class="col s2">
-            <img class="logo" src="./assets/images/supersearch logo.jpg" />
-        </div>
-        <div class="col s10">
-            <h1 class="lengthen">Marvel Super Searcher</h1>
-        </div>
+    <div>
+        <form class="hero-form">
+            <input type="textbox" placeholder="superhero name" class="textbox">
+            <button type="button" id="submit-button" value="search">Search</button>
+        </form>
     </div>
-
-    <!--search bar behaving abnormally-->
-    <div class="row">
-        <div class="input-field col s4 push-m4 valign-wrapper">
-            <input id="input" type="text">
-            <label for="input">Hero Name</label>
-            <button id="search">Search</button>
-          </div>
+    <div class="info-message">
+        <h2>Your Favorite<br>Characters<br>At Your Fingertips</h2>
     </div>
-
-    <!--api search reults display-->
+<!--api search results display, row is hidden-->
     <div class="row hide">
-        <!--remove hide class when serach button is selected-->
+<!--remove hide class when search button is selected-->
         <ul class="col s8 collection">
             <li id="dob">Date of Birth: </li>
             <li id="hometown">Place of Birth: </li>
             <li id="bio">Biography: </li>
             <li id="comics">Comics:</li>
         </ul>
-
         <div class="col s4 collection hide">
             <img id="hero-pic" />
         </div>
     </div>
-
-    <!--append div elements to display movie img and title (don't forget to remove hide class for displaying results)-->
+     <!--append div elements to display movie img and title (don't forget to remove hide class for displaying results)-->
     <div class="row hide">
         <img id="movie-results" />
     </div>
@@ -56,18 +56,15 @@
 </body>
 
 <footer>
-    <div class="row">
-
+    <div class="row" id="footer">
         <div class="left">
             <a href="about.html">About</a>
-            <br />
-            <a href="tos.html">Terms of Service</a>
-        </div>
-
+                <br/>
+                    <a href="tos.html">Terms of Service</a>
+                        </div>
         <div class="right">
             <p>SuperSearcher Project</p>
-        </div>
-    </div>
+                </div>
+                    </div>
 </footer>
-
 </html>

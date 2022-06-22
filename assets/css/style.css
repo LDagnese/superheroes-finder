@@ -1,8 +1,31 @@
+/*default styling*/
+*/ {
+    margin: 0 auto;
+}
+
+/*header and general stylings*/
+header {
+    background-color: #557A95;
+    border-bottom: solid 1px grey;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
 .logo {
     max-width:100%;
-    height: 140px;
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 15px;
 }
-/*made to fit title container*/
+
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #5D5C61 ;
+}
+
 .lengthen {
     width: 100%;
     display: inline-block;
@@ -10,16 +33,90 @@
     height:fit-content;
     text-align: center;
 }
-/*footer text won't go to the bottom of its container*/
+
+.row {
+    min-height: 100%;
+    margin-bottom: -100px;
+ }
+
+/*Div stylings*/
+.hero-form {
+    margin-top: 150px;
+    margin-left: 10px;
+}
+
+#submit-button {
+    line-height: 2.5;
+    padding: 0 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    background-color: #7395AE;
+    border-radius: 5px;
+    border: solid black 1px;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+#submit-button:hover{
+    background-color:#379683;
+}
+
+.lengthen span {
+    font-size: 40px;
+}
+
+.info-message {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 70%;
+    margin-left: 70px;
+    padding-bottom: 30px;
+}
+
+.info-message h2 {
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.hero-form .textbox {
+    height: 40px;
+    width: 350px;
+}
+
+/*footer stylings*/
 footer div {
     position:absolute;
     bottom: 0;
     width:100%;
     height:100px;
 }
+
+footer {
+    background-color: #379683;
+}
+
 .left {
     text-align: left;
 }
 .right {
     text-align: right;
 }
+
+.right p {
+    margin-right: 30px;
+    margin-top: 60px;
+}
+
+.left, .right {
+    height: 100px;
+    background-color: #557A95;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+
+
+
+
