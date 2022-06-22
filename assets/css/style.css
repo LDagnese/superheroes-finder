@@ -1,7 +1,8 @@
 :root {
     --primary: #EC1D24;
-    --background: #ffffff;
     --secondary: #172469;
+    --background: #ffffff;
+
 }
 
 * {
@@ -15,20 +16,27 @@ body {
 
 }
 
+/*all container design*/
 .container {
     background-color: var(--background);
     margin-top: 50px;
     border: var(--primary) 5px solid;
 }
 
+/*header and logo design*/
 h1 {
     color: var(--primary);
     font-size: 75px;
     text-align: center;
 }
 
-.info {
-    color: var(--secondary);
+.logo {
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+    margin-top: 50px;
+    float: left;
+    display: flex;
 }
 
 .home-about {
@@ -37,6 +45,12 @@ h1 {
     text-align: center;
 }
 
+/*design for biography section*/
+.info {
+    color: var(--secondary);
+}
+
+/*all body text and design*/
 h2, h4, p {
     color: var(--secondary);
     font-size: 24px;
@@ -53,15 +67,7 @@ h3 {
 
 }
 
-.logo {
-    height: 100px;
-    width: 100px;
-    margin-left: 30px;
-    margin-top: 50px;
-    float: left;
-    display: flex;
-}
-
+/*search button and input box design*/
 .search {
     background-color: var(--background);
     float: right;
@@ -86,5 +92,19 @@ button {
 
 button a:hover {
     background-color: var(--secondary);
+    color: var(--primary);
+}
+
+/*about link section*/
+.links {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 28px;
+}
+
+.links a {
     color: var(--primary);
 }
