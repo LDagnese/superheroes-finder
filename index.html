@@ -11,20 +11,23 @@
 </head>
 
 <body>
-    <img class="logo" src="./assets/images/supersearch logo.jpg" />
-    <h1 class="">Marvel Super Searcher</h1>
-    <h2 class="home-about">Want to know what more about your favorite superhero and what movies you can watch them in? <br>Enter your hero in the searchbar and see what comes up!</h2>
-
+    <div class="container">
+        <img class="logo" src="./assets/images/supersearch logo.jpg" />
+            <h1 class="">Marvel Super Searcher</h1>
+            <h2 class="home-about">Want to know more about your favorite superhero and what movies you can watch them in? <br>Enter your hero in the searchbar and see what comes up!</h2>
+        </div>
     <div class="search">
         <input type="text" id="search">
         <button>search</button>
     </div>
 
     <!--api search reults display-->
-    <div class="info">
-        <div id="dob">Date of Birth: </div>
-        <div id="hometown">Place of Birth: </div>
-        <div id="bio">Biography: </div>
+    <div class="container">
+        <div class="info">
+            <div id="dob">Date of Birth: </div>
+            <div id="hometown">Place of Birth: </div>
+            <div id="bio">Biography: </div>
+        </div>
     </div>
 
     <div class="">
@@ -32,8 +35,10 @@
     </div>
 
     <!--append div elements to display movie -->
-    <div id="next-movie">
-        <h3>Next Marvel Movie</h3>
+    <div class="container">   
+        <div id="next-movie">
+            <h3>Next Marvel Movie</h3>
+        </div>
     </div>
     <!--end marvel api info input-->
 
@@ -47,7 +52,7 @@
         <a href="tos.html">Terms of Service</a>
     </div>
     <div class="">
-        <h4>SuperSearcher Project</h4>
+        <h4>&copy; SuperSearcher Project</h4>
     </div>
 </footer>
 

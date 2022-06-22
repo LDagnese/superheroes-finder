@@ -1,7 +1,7 @@
 :root {
     --primary: #EC1D24;
-    --secondary: #c5c6c7;
-    --background: #1f2833;
+    --background: #ffffff;
+    --secondary: #172469;
 }
 
 * {
@@ -9,11 +9,16 @@
 }
 
 body {
+    background-image: linear-gradient(rgb(6, 17, 78), rgb(31, 31, 219), rgb(151, 152, 197));
     background-color: var(--background);
-    margin: 0;
-    padding: 0;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 
+}
+
+.container {
+    background-color: var(--background);
+    margin-top: 50px;
+    border: var(--primary) 5px solid;
 }
 
 h1 {
@@ -36,25 +41,29 @@ h2, h4, p {
     color: var(--secondary);
     font-size: 24px;
     text-align: left;
+    padding: 6px;
+    margin: 0px;
 }
 
 h3 {
     color: var(--primary);
-    text-align: justify;
+    text-align: center;
     margin-top: 0;
     flex: auto;
 
 }
 
 .logo {
-    height: 150px;
-    width: 150px;
-    float:left;
-    padding: right 15px;
+    height: 100px;
+    width: 100px;
+    margin-left: 30px;
+    margin-top: 50px;
+    float: left;
+    display: flex;
 }
 
 .search {
-    background-color: var(--secondary);
+    background-color: var(--background);
     float: right;
     height: 55px;
     width: 200px;
@@ -69,8 +78,9 @@ h3 {
 button {
     float:left;
     background-color: var(--primary);
-    color: var(--secondary);
+    color: var(--background);
     border-radius: 15px;
+    text-decoration: none;
     
 }
 
