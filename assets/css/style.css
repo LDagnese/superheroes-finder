@@ -1,0 +1,25 @@
+.logo {
+    max-width:100%;
+    height: 140px;
+}
+/*made to fit title container*/
+.lengthen {
+    width: 100%;
+    display: inline-block;
+    font-size: 7.3vw;
+    height:fit-content;
+    text-align: center;
+}
+/*footer text won't go to the bottom of its container*/
+footer div {
+    position:absolute;
+    bottom: 0;
+    width:100%;
+    height:100px;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
