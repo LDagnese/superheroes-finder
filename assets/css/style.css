@@ -1,0 +1,80 @@
+:root {
+    --primary: #EC1D24;
+    --secondary: #c5c6c7;
+    --background: #1f2833;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--background);
+    margin: 0;
+    padding: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+
+}
+
+h1 {
+    color: var(--primary);
+    font-size: 75px;
+    text-align: center;
+}
+
+.info {
+    color: var(--secondary);
+}
+
+.home-about {
+    color: var(--secondary);
+    font-size: 28px;
+    text-align: center;
+}
+
+h2, h4, p {
+    color: var(--secondary);
+    font-size: 24px;
+    text-align: left;
+}
+
+h3 {
+    color: var(--primary);
+    text-align: justify;
+    margin-top: 0;
+    flex: auto;
+
+}
+
+.logo {
+    height: 150px;
+    width: 150px;
+    float:left;
+    padding: right 15px;
+}
+
+.search {
+    background-color: var(--secondary);
+    float: right;
+    height: 55px;
+    width: 200px;
+    padding: 6px;
+    margin-top: 8px;
+    margin-right: 16px;
+    font-size: 18px;
+    border-radius: 15px;
+    
+}
+
+button {
+    float:left;
+    background-color: var(--primary);
+    color: var(--secondary);
+    border-radius: 15px;
+    
+}
+
+button a:hover {
+    background-color: var(--secondary);
+    color: var(--primary);
+}
