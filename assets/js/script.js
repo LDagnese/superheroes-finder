@@ -8,8 +8,23 @@ var heroimg = document.getElementById("hero-pic");
 var movies = document.getElementById("movie-results");
 
 // API handler for Marvel
+function getApi(){
+    let req = newXMLHttpRequest();
+    req.open("GET","https://gateway.marvel.com:443/v1/public/characters/1017577?apikey=9878fa368575f3fd08db8e28234824f8");
+    req.send();
+    req.onload=function(){
+        let jsonObj = req.responseText;
+        let profileJson = JSON.parse(jsonObj);
+        console.log(profileJson.data)
 
+            document.getElementById("dob").innerHTML=profileJson.data[0].date_of_birth;
+            document.getElementById("hometown").innerHTML=profileJson.data[1].hometown;
+            document.getElementById("bio").innerHTML=profileJson.data[2].bio;
+            document.getElementById("hero-pic").src=profileJson.data[3].image;
 
+    }
+}
+getApi();
 // API handler for comicvine
 
 // element creation for MarvelAPI
@@ -40,7 +55,7 @@ var getSuperHero = function () {
 document.getElementById("search").addEventListener("click", displayData);
 
 var dateofbirth = document.getElementById("dob");
-dateofbirth.innerHTML = innerHTML.get(dateofbirth);
+dateofbirth.innerHTML =
 
 
 
