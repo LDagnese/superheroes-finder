@@ -12,7 +12,7 @@ var movies = document.getElementById("movie-results");
 // API handler for comicvine
 
 // element creation for MarvelAPI
-var getSuperHero = function () {
+var getSuperHero = function (heroName) {
     var apiUrl = "https://gateway.marvel.com:443/v1/public/characters/1017577?apikey=9878fa368575f3fd08db8e28234824f8"
 
     // make a request
