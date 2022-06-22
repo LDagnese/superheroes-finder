@@ -1,4 +1,11 @@
 // declare variable
+const search_btn = document.querySelector("#search");
+
+var dateofbirth = document.getElementById("dob");
+var hometown = document.getElementById("hometown");
+var biography = document.getElementById("bio");
+var heroimg = document.getElementById("hero-pic");
+var movies = document.getElementById("movie-results");
 
 // API handler for Marvel
 
@@ -29,3 +36,32 @@ var getSuperHero = function () {
 // element creation for comicvine API
 
 // event listeners
+document.getElementById("search").addEventListener("click", displayData);
+
+var dateofbirth = document.getElementById("dob");
+dateofbirth.innerHTML = innerHTML.get(dateofbirth);
+
+
+
+document.getElementById("dob")
+let dob = document.createElement("div");
+dob.append(dateofbirth);
+
+document.getElementById("hometown")
+let ht = document.createElement("div");
+ht.append(hometown);
+
+document.getElementById("bio")
+let bio = document.createElement("div");
+bio.append(biography);
+
+document.getElementById("hero-pic")
+let hero = document.createElement("div");
+hero.append(heroimg);
+
+document.getElementById("movie-results")
+let movie = document.createElement("div");
+movie.append(movies);
+
+
+
