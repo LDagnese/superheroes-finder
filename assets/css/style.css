@@ -1,0 +1,473 @@
+
+
+/*header and general stylings*/
+header {
+    background-color: #557A95;
+    border-bottom: solid 1px grey;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.logo {
+    max-width:100%;
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #5D5C61 ;
+    justify-content: center;
+}
+
+.lengthen {
+    width: 100%;
+    display: inline-block;
+    font-size: 7.3vw;
+    height:fit-content;
+    text-align: center;
+}
+
+.lengthen span {
+    font-size: 150px;
+}
+
+.row {
+    min-height: 100%;
+    margin-bottom: -100px;
+ }
+
+/*Div stylings*/
+.hero-form {
+    margin-top: 150px;
+    margin-left: 10px;
+}
+
+#submit-button {
+    line-height: 2.5;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    background-color: #7395AE;
+    border-radius: 5px;
+    border: solid black 1px;
+}
+
+.info-message {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 70%;
+    margin-left: 200px;
+    padding-bottom: 30px;
+}
+
+.info-message h2 {
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.info-message h3 {
+    font-size: 30px;
+}
+
+.hero-form .textbox {
+    height: 40px;
+    width: 600px;
+    margin-left: 500px;
+}
+
+/*footer stylings*/
+footer div {
+    position:absolute;
+    bottom: 0;
+    width:100%;
+    height:100px;
+}
+
+footer {
+    background-color: #379683;
+}
+
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+
+.right p {
+    margin-right: 30px;
+    margin-top: 60px;
+}
+
+.left, .right {
+    height: 100px;
+    background-color: #557A95;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+/*MEDIA QUERY SECTION*/
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    
+header {
+    background-color: #557A95;
+    border-bottom: solid 1px grey;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+.logo {
+    max-width:100%;
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #5D5C61 ;
+}
+
+.lengthen {
+    width: 100%;
+    display: inline-block;
+    font-size: 7.3vw;
+    height:fit-content;
+    text-align: center;
+}
+
+.row {
+    min-height: 100%;
+    margin-bottom: -100px;
+ }
+
+
+.hero-form {
+    margin-top: 150px;
+    margin-left: 10px;
+}
+
+#submit-button {
+    line-height: 2.5;
+    padding: 0 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px #000;
+    background-color: #7395AE;
+    border-radius: 5px;
+    border: solid black 1px;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+
+#submit-button:hover{
+    background-color:#379683;
+}
+
+.lengthen span {
+    font-size: 40px;
+}
+
+.info-message {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+    margin-top: 75px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 70%;
+    margin-left: 70px;
+    padding-bottom: 30px;
+}
+
+.info-message h2 {
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.hero-form .textbox {
+    height: 40px;
+    width: 350px;
+}
+
+
+footer div {
+    position:absolute;
+    bottom: 0;
+    width:100%;
+    height:100px;
+}
+
+footer {
+    background-color: #379683;
+}
+
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+
+.right p {
+    margin-right: 30px;
+    margin-top: 60px;
+}
+
+.left, .right {
+    height: 100px;
+    background-color: #557A95;
+    box-shadow: 1px 1px 1px 1px grey;
+}
+}
+
+
+@media only screen and (max-width: 1280px) {
+    header {
+        background-color: #557A95;
+        border-bottom: solid 1px grey;
+        box-shadow: 1px 1px 1px 1px grey;
+    }
+    
+    .logo {
+        max-width:100%;
+        height: 150px;
+        width: 150px;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+    
+    h1 {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+        background-color: #5D5C61 ;
+    }
+    
+    .lengthen {
+        width: 100%;
+        display: inline-block;
+        font-size: 7.3vw;
+        height:fit-content;
+        text-align: center;
+    }
+    
+    .row {
+        min-height: 100%;
+        margin-bottom: -100px;
+     }
+    
+    .hero-form {
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    
+    #submit-button {
+        line-height: 2.5;
+        padding: 0 20px;
+        text-align: center;
+        text-shadow: 1px 1px 1px #000;
+        background-color: #7395AE;
+        border-radius: 5px;
+        border: solid black 1px;
+        box-shadow: 1px 1px 1px 1px grey;
+        justify-content: center;
+        height: 80px;
+    }
+    
+    #submit-button:hover{
+        background-color:#379683;
+    }
+    
+    .lengthen span {
+        font-size: 100px;
+    }
+    
+    .info-message {
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        margin-top: 75px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 70%;
+        margin-left: 175px;
+        padding-bottom: 30px;
+    }
+    
+    .info-message h2 {
+        font-size: 50px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .hero-form .textbox {
+        height: 80px;
+        width: 700px;
+        margin-left: 220px;
+    }
+    
+    footer div {
+        position:absolute;
+        bottom: 0;
+        width:100%;
+        height:40px;
+    }
+    
+    footer {
+        background-color: #379683;
+    }
+    
+    .left {
+        text-align: left;
+    }
+    .right {
+        text-align: right;
+    }
+    
+    .right p {
+        margin-right: 30px;
+        margin-top: 60px;
+    }
+    
+    .left, .right {
+        height: 100px;
+        background-color: #557A95;
+        box-shadow: 1px 1px 1px 1px grey;
+    }
+
+    h3 {
+        font-size: 24px;
+        border-top: 1px solid grey;
+        padding-top: 20px;
+    }
+}
+
+/*iphone XR styling*/
+@media only screen and (max-width: 440px) {
+    header {
+        background-color: #557A95;
+        border-bottom: solid 1px grey;
+        box-shadow: 1px 1px 1px 1px grey;
+    }
+
+    .logo {
+        max-width:100%;
+        height: 75px;
+        width: 75px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    h1 {
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+        background-color: #5D5C61 ;
+    }
+    
+    .lengthen {
+        width: 100%;
+        display: inline-block;
+        font-size: 25px;
+        height:fit-content;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-right: 40px;
+    }
+    
+    .row {
+        min-height: 100%;
+        margin-bottom: -100px;
+     }
+    
+    .hero-form {
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    
+    #submit-button {
+        line-height: 2.5;
+        padding: 0 20px;
+        text-align: center;
+        text-shadow: 1px 1px 1px #000;
+        background-color: #7395AE;
+        border-radius: 5px;
+        border: solid black 1px;
+        box-shadow: 1px 1px 1px 1px grey;
+        justify-content: center;
+        height: 80px;
+    }
+    
+    #submit-button:hover{
+        background-color:#379683;
+    }
+    
+    .lengthen span {
+        font-size: 30px;
+    }
+    
+    .info-message {
+        border-top: 1px solid grey;
+        border-bottom: 1px solid grey;
+        margin-top: 75px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 70%;
+        padding-bottom: 30px;
+        margin-left: 25px;
+    }
+    
+    .info-message h2 {
+        font-size: 20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .hero-form .textbox {
+        height: 80px;
+        width: 200px;
+        margin-left: 20px;
+    }
+    
+    footer div {
+        position:absolute;
+        bottom: 0;
+        width:100%;
+        height:40px;
+    }
+    
+    footer {
+        background-color: #379683;
+    }
+    
+    .left {
+        text-align: left;
+    }
+    .right {
+        text-align: right;
+    }
+    
+    .right p {
+        margin-right: 30px;
+    }
+    
+    .left, .right {
+        height: 100px;
+        background-color: #557A95;
+        box-shadow: 1px 1px 1px 1px grey;
+    }
+
+    .info-message h3 {
+        font-size: 15px;
+        border-top: 1px solid grey;
+        padding-top: 20px;
+    }
+}

@@ -10,44 +10,72 @@
     <title>Superhero Super Searcher</title>
 </head>
 
+<!--logo and title-->
+ <header class="row" id="header">
+    <div class="col s2">
+        <img class="logo" src="./assets/images/supersearch logo.jpg" />
+            </div>
+    <div class="col s10">
+        <h1 class="lengthen"><span>M</span>arvel<span>S</span>uper<span>S</span>earcher</h1>
+            </div>
+</header>
+<!--end of logo and title section-->
+
+<!--main body section-->
 <body>
-    <img class="" src="./assets/images/supersearch logo.jpg" />
-    <h1 class="">Marvel Super Searcher</h1>
-
-    <div class="">
-        <input id="search">
-        <button>search</button>
+    <div class="hero-form">
+        <form>
+            <input type="textbox" placeholder="superhero name" class="textbox">
+            <button type="button" id="submit-button" value="search">Search</button>
+        </form>
     </div>
-
-    <!--api search reults display-->
-    <div class="">
-        <div id="dob">Date of Birth: </div>
-        <div id="hometown">Place of Birth: </div>
-        <div id="bio">Biography: </div>
+    <div class="info-message">
+        <h2>Your Favorite<br>Heros<br>At Your Fingertips</h2>
+        <h3>Have you ever wanted to know random and often obscure facts about
+            your favorite superhero? We've got you covered! Enter the name of 
+            any hero into the searchbox and explore! 
+        </h3>
     </div>
-
-    <div class="">
-        <img id="hero-pic" />
+<!--api search results display, row is hidden-->
+    <div class="row hide">
+<!--remove hide class when search button is selected-->
+        <ul class="col s8 collection">
+            <li id="dob">Date of Birth: </li>
+            <li id="hometown">Place of Birth: </li>
+            <li id="bio">Biography: </li>
+            <li id="comics">Comics:</li>
+        </ul>
+        <div class="col s4 collection hide">
+            <img id="hero-pic" />
+        </div>
     </div>
+<<<<<<< HEAD
+     <!--append div elements to display movie img and title (don't forget to remove hide class for displaying results)-->
+    <div class="row hide">
+        <img id="movie-results" />
+=======
 
     <!--append div elements to display movie -->
     <div id="next-movie">
         <h3>Next Marvel Movie</h3>
+>>>>>>> ecc9a4c05b4a76dbbb86e83e7b251763ef141bd1
     </div>
     <!--end marvel api info input-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
-<footer>
-    <div class="">
-        <a href="about.html">About</a>
-        <br />
-        <a href="tos.html">Terms of Service</a>
-    </div>
-    <div class="">
-        <h4>SuperSearcher Project</h4>
-    </div>
-</footer>
 
+<footer>
+    <div class="row" id="footer">
+        <div class="left">
+            <a href="about.html">About</a>
+                <br/>
+                    <a href="tos.html">Terms of Service</a>
+                        </div>
+        <div class="right">
+            <p>SuperSearcher Project</p>
+                </div>
+                    </div>
+</footer>
 </html>
