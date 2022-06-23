@@ -5,106 +5,442 @@
 
 }
 
-* {
-    box-sizing: border-box;
+
+/*header and general stylings*/
+header {
+    background-color: var(--background);
+    border-bottom: solid 3px var(--primary);
+    box-shadow: 1px 1px 1px 1px var(--primary);
+}
+
+.logo {
+    max-width:100%;
+    height: 200px;
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+h1 {
+    color: #f0131e;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 body {
     background-image: linear-gradient(rgb(6, 17, 78), rgb(31, 31, 219), rgb(151, 152, 197));
     background-color: var(--background);
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-
+    justify-content: center;
+    color: var(--secondary);
 }
 
-/*all container design*/
 .container {
     background-color: var(--background);
-    margin-top: 50px;
-    border: var(--primary) 5px solid;
-}
-
-/*header and logo design*/
-h1 {
-    color: var(--primary);
-    font-size: 75px;
     text-align: center;
-}
-
-.logo {
-    height: 100px;
-    width: 100px;
-    margin-left: 30px;
-    margin-top: 50px;
-    float: left;
-    display: flex;
-}
-
-.home-about {
-    color: var(--secondary);
-    font-size: 28px;
-    text-align: center;
-}
-
-/*design for biography section*/
-.info {
-    color: var(--secondary);
-}
-
-/*all body text and design*/
-h2, h4, p {
-    color: var(--secondary);
-    font-size: 24px;
-    text-align: left;
-    padding: 6px;
-    margin: 0px;
-}
-
-h3 {
-    color: var(--primary);
-    text-align: center;
-    margin-top: 0;
-    flex: auto;
-
-}
-
-/*search button and input box design*/
-.search {
-    background-color: var(--background);
-    float: right;
-    height: 55px;
-    width: 200px;
-    padding: 6px;
-    margin-top: 8px;
-    margin-right: 16px;
-    font-size: 18px;
     border-radius: 15px;
-    
 }
 
-button {
-    float:left;
+.lengthen {
+    width: 100%;
+    display: inline-block;
+    font-size: 7.3vw;
+    height:fit-content;
+    text-align: center;
+}
+
+.lengthen span {
+    font-size: 150px;
+}
+
+.row {
+    min-height: 100%;
+    margin-bottom: -100px;
+ }
+
+/*Div stylings*/
+.hero-form {
+    margin: 0 auto;
+}
+
+#submit-button {
+    line-height: 2.5;
+    text-align: center;
     background-color: var(--primary);
     color: var(--background);
     border-radius: 15px;
-    text-decoration: none;
-    
+    border: solid var(--secondary) 1px;
 }
 
-button a:hover {
-    background-color: var(--secondary);
-    color: var(--primary);
+.info-message {
+    margin-top: 200px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 70%;
+    margin-left: 200px;
+    padding-bottom: 0px;
 }
 
-/*about link section*/
-.links {
-    text-decoration: none;
+.info-message h2 {
+    font-size: 50px;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-content: center;
+}
+
+.info-message h3 {
+    font-size: 30px;
+}
+
+.hero-form .textbox {
+    height: 40px;
+    width: 600px;
+    margin-left: 500px;
+}
+
+/*footer stylings*/
+
+footer div {
+    background-color: var(--primary);
+    position: relative;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    font-size: 28px;
 }
 
-.links a {
-    color: var(--primary);
+footer div a {
+    color: var(--background);
+}
+
+.copy {
+    text-align: right;
+    color: var(--background);
+}
+
+
+/*MEDIA QUERY SECTION*/
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    
+header {
+    background-color: var(--background);
+    border-bottom: solid 3px var(--primary);
+}
+
+.logo {
+    max-width:100%;
+    height: 50px;
+    width: 50px;
+    margin-top: 30px;
+    margin-left: 15px;
+}
+
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(rgb(6, 17, 78), rgb(31, 31, 219), rgb(151, 152, 197));
+    background-color: var(--background);
+}
+
+.container {
+    background-color: var(--background);
+    text-align: center;
+    border-radius: 15px;
+}
+
+.lengthen {
+    width: 100%;
+    display: inline-block;
+    font-size: 7.3vw;
+    height:fit-content;
+    text-align: center;
+}
+
+.row {
+    min-height: 100%;
+    margin-bottom: -100px;
+ }
+
+
+.hero-form {
+    margin-top: 150px;
+    margin-left: 10px;
+}
+
+#submit-button {
+    line-height: 2.5;
+    text-align: center;
+    background-color: var(--primary);
+    color: var(--background);
+    border-radius: 15px;
+    border: solid var(--secondary) 1px;
+}
+
+#submit-button:hover{
+    background-color: var(--background);
+}
+
+.lengthen span {
+    font-size: 40px;
+}
+
+.info-message {
+    margin-top: 75px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 70%;
+    margin-left: 70px;
+    padding-bottom: 30px;
+}
+
+.info-message h2 {
+    font-size: 20px;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+.hero-form .textbox {
+    height: 40px;
+    width: 350px;
+}
+
+
+footer div {
+    background-color: var(--primary);
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    background-color: var(--primary);
+}
+}
+
+
+@media only screen and (max-width: 1280px) {
+    header {
+        background-color: var(--background);
+        border-bottom: solid 3px var(--primary);
+    }
+    
+    .logo {
+        max-width:100%;
+        height: 150px;
+        width: 150px;
+        margin-top: 30px;
+        margin-left: 15px;
+    }
+    
+    h1 {
+        color: var(--primary);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+        background-image: linear-gradient(rgb(6, 17, 78), rgb(31, 31, 219), rgb(151, 152, 197));
+        background-color: var(--background);
+    }
+
+    .container {
+        background-color: var(--background);
+        text-align: center;
+        border-radius: 15px;
+    }
+    
+    .lengthen {
+        width: 100%;
+        display: inline-block;
+        font-size: 7.3vw;
+        height:fit-content;
+        text-align: center;
+    }
+    
+    .row {
+        min-height: 100%;
+        margin-bottom: -100px;
+     }
+    
+    .hero-form {
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    
+    #submit-button {
+        line-height: 2.5;
+        padding: 0 20px;
+        text-align: center;
+        text-shadow: 1px 1px 1px #000;
+        background-color: var(--primary);
+        color: var(--background);
+        border-radius: 15px;
+        border: solid black 1px;
+        box-shadow: 1px 1px 1px 1px grey;
+        justify-content: center;
+        height: 80px;
+    }
+    
+    #submit-button:hover{
+        background-color:#379683;
+    }
+    
+    .lengthen span {
+        font-size: 100px;
+    }
+    
+    .info-message {
+        margin-top: 75px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 70%;
+        margin-left: 175px;
+        padding-bottom: 30px;
+    }
+    
+    .info-message h2 {
+        font-size: 50px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .hero-form .textbox {
+        height: 80px;
+        width: 700px;
+        margin-left: 220px;
+    }
+    
+    footer div {
+        background-color: var(--primary);
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    footer {
+        background-color: var(--primary);
+    }
+    
+
+    h3 {
+        font-size: 24px;
+        border-top: 1px solid grey;
+        padding-top: 20px;
+    }
+}
+
+/*iphone XR styling*/
+@media only screen and (max-width: 440px) {
+    header {
+        background-color: var(--background);
+        border-bottom: solid 3px var(--primary);
+    }
+
+    .logo {
+        max-width:100%;
+        height: 75px;
+        width: 75px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    
+    h1 {
+        color: var(--primary);
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    body {
+        background-image: linear-gradient(rgb(6, 17, 78), rgb(31, 31, 219), rgb(151, 152, 197));
+        background-color: var(--background);
+    }
+
+    .container {
+        background-color: var(--background);
+        text-align: center;
+        border-radius: 15px;
+    }
+    
+    .lengthen {
+        width: 100%;
+        display: inline-block;
+        font-size: 25px;
+        height:fit-content;
+        text-align: center;
+        flex-wrap: wrap;
+        margin-right: 40px;
+    }
+    
+    .row {
+        min-height: 100%;
+        margin-bottom: -100px;
+     }
+    
+    .hero-form {
+        margin-top: 150px;
+        margin-left: 10px;
+    }
+    
+    #submit-button {
+        line-height: 2.5;
+        padding: 0 20px;
+        text-align: center;
+        text-shadow: 1px 1px 1px #000;
+        background-color: var(--primary);
+        color: var(--background);
+        border-radius: 5px;
+        border: solid black 1px;
+        box-shadow: 1px 1px 1px 1px grey;
+        justify-content: center;
+        height: 80px;
+    }
+    
+    #submit-button:hover{
+        background-color: var(--background);
+        color: var(--primary);
+    }
+    
+    .lengthen span {
+        font-size: 30px;
+    }
+    
+    .info-message {
+        margin-top: 75px;
+        margin-bottom: 20px;
+        text-align: center;
+        width: 70%;
+        padding-bottom: 30px;
+        margin-left: 25px;
+    }
+    
+    .info-message h2 {
+        font-size: 20px;
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    
+    .hero-form .textbox {
+        height: 80px;
+        width: 200px;
+        margin-left: 20px;
+    }
+    
+    footer div {
+        background-color: var(--primary);
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    footer {
+        background-color: var(--primary);
+    }
+    
+
+    .info-message h3 {
+        font-size: 15px;
+        border-top: 1px solid grey;
+        padding-top: 20px;
+    }
 }
