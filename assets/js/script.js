@@ -1,11 +1,12 @@
 // declare variable
-const search_btn = document.querySelector("#search");
+var search_btn = document.getElementById("heroName-form");
 
 var dateofbirth = document.getElementById("dob");
 var hometown = document.getElementById("hometown");
 var biography = document.getElementById("bio");
 var heroimg = document.getElementById("hero-pic");
 var movies = document.getElementById("movie-results");
+var heroResults = document.getElementById("hero-results");
 
 // API handler for Marvel
 
@@ -13,16 +14,24 @@ var movies = document.getElementById("movie-results");
 
 // element creation for MarvelAPI
 var getSuperHero = function (heroName) {
-    var apiUrl = "https://gateway.marvel.com:443/v1/public/characters/1017577?apikey=9878fa368575f3fd08db8e28234824f8"
+    var apiUrl = `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${heroName}&ts=1&apikey=9878fa368575f3fd08db8e28234824f8&hash=113f4304b554b405794728c1084d0c0d`
 
     // make a request
     fetch(apiUrl)
         .then(function(response){
             if (response.ok) {
-                console.log(response);
-                response.json().then(function(data) {
-                    console.log(data);
-    
+                response.json().then(function(result) {
+                    console.log(result.data)
+                    if (result.data.count >= 1) {
+                        for (let i = 0; i < result.data.count; i++) {
+                            var heroEl = document.createElement('li');
+                            heroEl.id = result.data.results[i].id;
+                            heroEl.textContent = result.data.results[i].name;
+                            heroResults.appendChild(heroEl);
+                        }
+                    } else {
+                        alert("That's not like any Marvel super hero")
+                    }
                 });
             } else {
                 console.log('Error:Data not retrieved')
@@ -42,7 +51,6 @@ var getNextMovie = function () {
     fetch(apiUrl)
         .then(function(response){
             if (response.ok) {
-                console.log(response);
                 response.json().then(function(data) {
                     var movieEl = document.getElementById("next-movie");
                     var movieAnnounce = document.createElement('h4');
@@ -55,6 +63,7 @@ var getNextMovie = function () {
                     releaseDate.textContent = `Release Date : ${data.release_date}`
                     movieAnnounce.textContent = `Days Until Release: ${data.days_until}`
                     movieOverview.textContent = `Overview: ${data.overview}`
+                    movieOverview.style.marginBottom = "200px"
 
                     movieEl.appendChild(movieTitle);
                     movieEl.appendChild(movieAnnounce);
@@ -74,43 +83,18 @@ var getNextMovie = function () {
         });
 };
 
-
-//retrieve function 
-var buildHeroElements = function(name) {
-    //make sure it returns data
-    //take name, build an element and append it to the proper div
-    //get bio, build an element and append to proper div
-    //get image link, build element and append to div 
-    //get movie list (maybe) build element and append to div 
+// event listeners
+function nameSubmit(event) {
+    event.preventDefault();
+    var heroInputName = document.querySelector("input[name='heroInput']").value;
+    if (heroInputName === "") {
+        alert("Must Enter a Name");
+        return;
+    }
+    getSuperHero(heroInputName);
 }
 
-
-// event listeners
-// document.getElementById("search").addEventListener("click", displayData);
-
-var dateofbirth = document.getElementById("dob");
-// dateofbirth.innerHTML = innerHTML.get(dateofbirth);
-
-
-document.getElementById("dob")
-let dob = document.createElement("div");
-dob.append(dateofbirth);
-
-document.getElementById("hometown")
-let ht = document.createElement("div");
-ht.append(hometown);
-
-document.getElementById("bio")
-let bio = document.createElement("div");
-bio.append(biography);
-
-document.getElementById("hero-pic")
-let hero = document.createElement("div");
-hero.append(heroimg);
-
-document.getElementById("movie-results")
-let movie = document.createElement("div");
-movie.append(movies);
+search_btn.addEventListener('submit',nameSubmit);
 
 getNextMovie();
 

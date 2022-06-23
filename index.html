@@ -11,39 +11,37 @@
 </head>
 
 <!--logo and title-->
- <header class="row" id="header">
+<header class="row" id="header">
     <div class="col s2">
         <img class="logo" src="./assets/images/supersearch logo.jpg" />
-            </div>
+    </div>
     <div class="col s10">
         <h1 class="lengthen"><span>M</span>arvel<span>S</span>uper<span>S</span>earcher</h1>
-            </div>
+    </div>
 </header>
 <!--end of logo and title section-->
 
 <!--main body section-->
+
 <body>
-    <div class="hero-form">
-        <form>
-            <input type="textbox" placeholder="superhero name" class="textbox">
-            <button type="button" id="submit-button" value="search">Search</button>
-        </form>
-    </div>
     <div class="info-message">
         <h2>Your Favorite<br>Heros<br>At Your Fingertips</h2>
         <h3>Have you ever wanted to know random and often obscure facts about
-            your favorite superhero? We've got you covered! Enter the name of 
-            any hero into the searchbox and explore! 
+            your favorite superhero? We've got you covered! Enter the name of
+            any hero into the searchbox and explore!
         </h3>
     </div>
-<!--api search results display, row is hidden-->
-    <div class="row hide">
-<!--remove hide class when search button is selected-->
-        <ul class="col s8 collection">
-            <li id="dob">Date of Birth: </li>
-            <li id="hometown">Place of Birth: </li>
-            <li id="bio">Biography: </li>
-            <li id="comics">Comics:</li>
+    <div class="hero-form">
+        <form id="heroName-form">
+            <input name="heroInput" type="textbox" placeholder="superhero name" class="textbox">
+            <button type="submit" id="submit-button">Search</button>
+        </form>
+    </div>
+    <!--api search results display, row is hidden-->
+    <div class="superhero">
+        <!--remove hide class when search button is selected-->
+        <ul id="hero-results" class="col s8 collection">
+            
         </ul>
         <div class="col s4 collection hide">
             <img id="hero-pic" />
@@ -61,15 +59,16 @@
 </body>
 
 <footer>
-    <div class="row" id="footer">
+    <div id="footer">
         <div class="left">
             <a href="about.html">About</a>
-                <br/>
-                    <a href="tos.html">Terms of Service</a>
-                        </div>
+            <br />
+            <a href="tos.html">Terms of Service</a>
+        </div>
         <div class="right">
             <p>SuperSearcher Project</p>
-                </div>
-                    </div>
+        </div>
+    </div>
 </footer>
+
 </html>

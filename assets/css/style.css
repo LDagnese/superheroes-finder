@@ -194,7 +194,7 @@ body {
 }
 
 .hero-form .textbox {
-    height: 40px;
+    height: 10px;
     width: 350px;
 }
 
@@ -267,7 +267,7 @@ footer {
      }
     
     .hero-form {
-        margin-top: 150px;
+        margin-top: 10px;
         margin-left: 10px;
     }
     
@@ -309,7 +309,7 @@ footer {
     }
     
     .hero-form .textbox {
-        height: 80px;
+        height: 10px;
         width: 700px;
         margin-left: 220px;
     }
@@ -390,7 +390,7 @@ footer {
      }
     
     .hero-form {
-        margin-top: 150px;
+        margin-top: 10px;
         margin-left: 10px;
     }
     
