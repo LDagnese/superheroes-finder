@@ -6,6 +6,7 @@ var hometown = document.getElementById("#hometown");
 var biography = document.getElementById("#bio");
 var heroimg = document.getElementById("#hero-pic");
 var movies = document.getElementById("#movie-results");
+var heroName = document.getElementById("#heroInput");
 
 // // API handler for Marvel
 
@@ -31,6 +32,7 @@ function getSuperHero () {
         .catch(function(error) {
             console.log(error);
         });
+    getNextMovie();
 };
 
 // get next movie from api
