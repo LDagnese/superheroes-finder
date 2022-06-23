@@ -86,6 +86,7 @@ var getNextMovie = function () {
 // event listeners
 function nameSubmit(event) {
     event.preventDefault();
+    heroResults.innerHTML = "";
     var heroInputName = document.querySelector("input[name='heroInput']").value;
     if (heroInputName === "") {
         alert("Must Enter a Name");
