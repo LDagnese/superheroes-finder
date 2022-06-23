@@ -85,7 +85,7 @@ body {
 
 /*footer stylings*/
 footer div {
-    position:absolute;
+    position:fixed;
     bottom: 0;
     width:100%;
     height:100px;
@@ -200,7 +200,7 @@ body {
 
 
 footer div {
-    position:absolute;
+    position:fixed;
     bottom: 0;
     width:100%;
     height:100px;
@@ -315,7 +315,7 @@ footer {
     }
     
     footer div {
-        position:absolute;
+        position:fixed;
         bottom: 0;
         width:100%;
         height:40px;
@@ -438,7 +438,7 @@ footer {
     }
     
     footer div {
-        position:absolute;
+        position:fixed;
         bottom: 0;
         width:100%;
         height:40px;
