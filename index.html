@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,8 +9,66 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Superhero Super Searcher</title>
 </head>
+
+<!--logo and title-->
+<header class="row" id="header">
+    <div class="col s2">
+        <img class="logo" src="./assets/images/supersearch logo.jpg" />
+    </div>
+    <div class="col s10">
+        <h1 class="lengthen"><span>M</span>arvel<span>S</span>uper<span>S</span>earcher</h1>
+    </div>
+</header>
+<!--end of logo and title section-->
+
+<!--main body section-->
+
 <body>
+    <div class="info-message">
+        <h2>Your Favorite<br>Heros<br>At Your Fingertips</h2>
+        <h3>Have you ever wanted to know random and often obscure facts about
+            your favorite superhero? We've got you covered! Enter the name of
+            any hero into the searchbox and explore!
+        </h3>
+    </div>
+    <div class="hero-form">
+        <form id="heroName-form">
+            <input name="heroInput" type="textbox" placeholder="superhero name" class="textbox">
+            <button type="submit" id="submit-button">Search</button>
+        </form>
+    </div>
+    <!--api search results display, row is hidden-->
+    <div class="superhero">
+        <!--remove hide class when search button is selected-->
+        <ul id="hero-results" class="col s8 collection">
+            
+        </ul>
+        <div class="col s4 collection hide">
+            <img id="hero-pic" />
+        </div>
+    </div>
+
+    <!--append div elements to display movie -->
+    <div id="next-movie">
+        <h3>Next Marvel Movie</h3>
+    </div>
+    <!--end marvel api info input-->
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
+
+<footer>
+    <div id="footer">
+        <div class="left">
+            <a href="about.html">About</a>
+            <br />
+            <a href="tos.html">Terms of Service</a>
+        </div>
+        <div class="right">
+            <p>SuperSearcher Project</p>
+        </div>
+    </div>
+</footer>
+
 </html>
