@@ -74,12 +74,22 @@ var getNextMovie = function () {
         });
 };
 
+
+//retrieve function 
+var buildHeroElements = function(name) {
+    //make sure it returns data
+    //take name, build an element and append it to the proper div
+    //get bio, build an element and append to proper div
+    //get image link, build element and append to div 
+    //get movie list (maybe) build element and append to div 
+}
+
+
 // event listeners
 // document.getElementById("search").addEventListener("click", displayData);
 
 var dateofbirth = document.getElementById("dob");
 // dateofbirth.innerHTML = innerHTML.get(dateofbirth);
-
 
 
 document.getElementById("dob")

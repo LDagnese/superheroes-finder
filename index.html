@@ -29,22 +29,38 @@
             <div id="bio">Biography: </div>
         </div>
     </div>
-
-    <div class="">
-        <img id="hero-pic" />
+<!--api search results display, row is hidden-->
+    <div class="row hide">
+<!--remove hide class when search button is selected-->
+        <ul class="col s8 collection">
+            <li id="dob">Date of Birth: </li>
+            <li id="hometown">Place of Birth: </li>
+            <li id="bio">Biography: </li>
+            <li id="comics">Comics:</li>
+        </ul>
+        <div class="col s4 collection hide">
+            <img id="hero-pic" />
+        </div>
     </div>
+     <!--append div elements to display movie img and title (don't forget to remove hide class for displaying results)-->
+    <div class="row hide">
+        <img id="movie-results" />
+=======
 
     <!--append div elements to display movie -->
+
     <div class="container">   
         <div id="next-movie">
             <h3>Next Marvel Movie</h3>
         </div>
-    </div>
+
+
     <!--end marvel api info input-->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
+
 <footer>
     <div class="container">   
         <div class="links">
@@ -56,6 +72,6 @@
     <div class="">
         <h4>&copy; SuperSearcher Project</h4>
     </div>
-</footer>
 
+</footer>
 </html>

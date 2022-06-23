@@ -1,9 +1,10 @@
+
 :root {
     --primary: #EC1D24;
     --secondary: #172469;
     --background: #ffffff;
-
 }
+
 
 
 /*header and general stylings*/
@@ -58,12 +59,14 @@ body {
 
 /*Div stylings*/
 .hero-form {
+
     margin: 0 auto;
 }
 
 #submit-button {
     line-height: 2.5;
     text-align: center;
+
     background-color: var(--primary);
     color: var(--background);
     border-radius: 15px;
@@ -77,6 +80,7 @@ body {
     width: 70%;
     margin-left: 200px;
     padding-bottom: 0px;
+
 }
 
 .info-message h2 {
@@ -96,7 +100,6 @@ body {
 }
 
 /*footer stylings*/
-
 footer div {
     background-color: var(--primary);
     position: relative;
@@ -114,7 +117,6 @@ footer div a {
     text-align: right;
     color: var(--background);
 }
-
 
 /*MEDIA QUERY SECTION*/
 @media only screen and (max-width: 480px) and (min-width: 320px) {
@@ -205,6 +207,7 @@ body {
 
 
 footer div {
+
     background-color: var(--primary);
     position: relative;
     display: flex;
@@ -216,8 +219,6 @@ footer div {
 footer {
     background-color: var(--primary);
 }
-}
-
 
 @media only screen and (max-width: 1280px) {
     header {
@@ -234,6 +235,7 @@ footer {
     }
     
     h1 {
+
         color: var(--primary);
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
@@ -310,6 +312,7 @@ footer {
     }
     
     footer div {
+
         background-color: var(--primary);
         position: relative;
         display: flex;
@@ -321,7 +324,6 @@ footer {
     footer {
         background-color: var(--primary);
     }
-    
 
     h3 {
         font-size: 24px;
@@ -335,6 +337,7 @@ footer {
     header {
         background-color: var(--background);
         border-bottom: solid 3px var(--primary);
+
     }
 
     .logo {
@@ -346,11 +349,13 @@ footer {
     }
     
     h1 {
+
         color: var(--primary);
         font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
     
     body {
+
         background-image: linear-gradient(rgb(6, 17, 78), rgb(31, 31, 219), rgb(151, 152, 197));
         background-color: var(--background);
     }
@@ -359,6 +364,7 @@ footer {
         background-color: var(--background);
         text-align: center;
         border-radius: 15px;
+
     }
     
     .lengthen {
@@ -398,6 +404,7 @@ footer {
     #submit-button:hover{
         background-color: var(--background);
         color: var(--primary);
+
     }
     
     .lengthen span {
