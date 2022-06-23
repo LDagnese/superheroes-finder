@@ -14,7 +14,7 @@ var heroResults = document.getElementById("hero-results");
 
 // element creation for MarvelAPI
 var getSuperHero = function (heroName) {
-    var apiUrl = `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${heroName}&ts=1&apikey=9878fa368575f3fd08db8e28234824f8&hash=113f4304b554b405794728c1084d0c0d`
+    var apiUrl = `https://gateway.marvel.com:443/v1/public/characters?nameStartsWith=${heroName}&apikey=9878fa368575f3fd08db8e28234824f8`
 
     // make a request
     fetch(apiUrl)
